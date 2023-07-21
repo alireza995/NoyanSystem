@@ -6,4 +6,23 @@
         <ImplicitUsings>enable</ImplicitUsings>
     </PropertyGroup>
 
+    <ItemGroup>
+        <PackageReference Include="DateOnlyTimeOnly.AspNet.Swashbuckle" Version="2.1.1"/>
+        <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="11.6.0"/>
+        <PackageReference Include="MediatR" Version="12.1.1"/>
+        <PackageReference Include="MediatR.Extensions.FluentValidation.AspNetCore" Version="4.0.0"/>
+        <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="7.0.9">
+            <PrivateAssets>all</PrivateAssets>
+            <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+        </PackageReference>
+        <PackageReference Include="Serilog.Extensions.Logging.File" Version="3.0.0"/>
+        <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0"/>
+    </ItemGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\Application\Application.csproj"/>
+        <ProjectReference Include="..\Basic\Basic.csproj"/>
+        <ProjectReference Include="..\Persistence\Persistence.csproj"/>
+    </ItemGroup>
+
 </Project>
