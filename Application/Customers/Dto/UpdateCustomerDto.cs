@@ -1,0 +1,11 @@
+namespace Application.Customers.Dto;
+
+public class UpdateCustomerDto
+{
+    public string? FatherName { get; set; } = null!;
+    public int? CertificateNumber { get; set; }
+    public long NationalCode { get; set; }
+    public DateOnly? BirthDate { get; set; }
+    public string Mobile { get; set; } = null!;
+    public string Address { get; set; } = null!;
+}
